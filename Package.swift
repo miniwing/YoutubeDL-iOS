@@ -10,7 +10,7 @@ let package = Package(
             targets: ["YoutubeDL"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kewlbear/FFmpeg-iOS.git", .branch("0.1.0")),
+        .package(url: "https://github.com/kewlbear/FFmpeg-iOS.git", .tag("0.1.0")),
         .package(url: "https://github.com/kewlbear/PythonKit.git", .branch("master")),
         .package(url: "https://github.com/kewlbear/Python-iOS.git", .branch("kivy-ios")),
     ],
