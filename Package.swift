@@ -11,8 +11,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/miniwing/FFmpeg-iOS.git", .branch("main")),
-        .package(url: "https://github.com/miniwing/PythonKit.git", .branch("master")),
-        .package(url: "https://github.com/kewlbear/Python-iOS.git", .branch("kivy-ios")),
+        .package(url: "https://github.com/pvieito/PythonKit.git", .branch("master")),
+        .package(url: "https://github.com/miniwing/Python-iOS.git", .branch("kivy-ios")),
     ],
     targets: [
         .target(
