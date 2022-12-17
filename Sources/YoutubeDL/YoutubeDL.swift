@@ -25,9 +25,9 @@ import PythonKit
 import PythonSupport
 
 public struct Info: CustomStringConvertible {
-    let info: PythonObject
+    public let info: PythonObject
 
-    var dict: [String: PythonObject]? {
+    public var dict: [String: PythonObject]? {
         Dictionary(info)
     }
 
@@ -35,7 +35,11 @@ public struct Info: CustomStringConvertible {
         dict?["title"].flatMap { String($0) }
     }
 
-    var format: Format? {
+    public var thumbnail: String? {
+        dict?["thumbnail"].flatMap { String($0) }
+    }
+
+    public var format: Format? {
         dict.map { Format(format: $0) }
     }
     
